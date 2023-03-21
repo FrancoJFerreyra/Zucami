@@ -1,0 +1,103 @@
+@import './customBS/bootstrap.scss';
+
+html {
+  height: 100%;
+}
+
+body{
+  background: url('../assets/zucami_mobile_background.png') center center no-repeat;
+  background-size: cover;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+#logo{
+  margin: 16px 0 24px;
+  text-align: center;
+  img{
+    max-width: 125px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.title__container{
+  padding-left: calc(var(--bs-gutter-x) * .5);;
+  padding-right: calc(var(--bs-gutter-x) * .5);;
+  text-align: center;
+  margin-bottom: 16px;
+  h1{
+    color: #3ace4c;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p{
+    color: white;
+  }
+}
+
+.container__mobile{
+  padding: 0;
+}
+.form__container{
+  padding: 16px 28px;
+  background-color: $gray-300;
+}
+
+.form__inputs--container{
+  row-gap: 8px;
+}
+
+.submit__btn{
+  margin-right: 28px;
+}
+
+.zucami__book{
+  width: 100%;
+  max-width: 375px;
+  height: auto;
+}
+
+@include media-breakpoint-up(md) {
+  body{
+  background: url('../assets/zucami_landing.png') center no-repeat;
+    background-size: cover;
+  }
+
+  #logo{
+    text-align: start;
+    margin-bottom: 75px;
+  }
+
+  .title__container{
+    padding: 0;
+    text-align: start;
+  } 
+  
+  .section1__content--container{
+    align-items: center;
+  }
+
+  .container__mobile{
+    padding-right: calc(var(--bs-gutter-x) * .5);;
+    padding-left: calc(var(--bs-gutter-x) * .5);;
+  }
+
+  .form__container{
+    padding: 16px;
+  }
+
+  .submit__btn{
+    margin-right: 16px;
+  }
+
+  .zucami__book{
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
